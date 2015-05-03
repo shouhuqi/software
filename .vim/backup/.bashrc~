@@ -1,0 +1,16 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+[[ -s "/home/users/jiangduanbao/.jumbo/etc/bashrc" ]] && source "/home/users/jiangduanbao/.jumbo/etc/bashrc"
+
+export PATH="$PATH:/usr/lib64/"
+export LD_LIBRARY_PATH=/usr/lib64/:/home/users/jiangduanbao/workroot/suzhou_data_evaluate/linux386baidu2/suzhou
+
+#source "/home/users/jiangduanbao/z.sh"
+
+eval "`dircolors -b ~/.my_color`"

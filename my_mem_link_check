@@ -1,0 +1,2 @@
+exe_name=$1  xml_file=$1".log"
+valgrind --tool=memcheck --trace-children=yes --child-silent-after-fork=yes --time-stamp=yes  --xml=yes --xml-file=$xml_file $exe_name

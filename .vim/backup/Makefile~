@@ -1,0 +1,2 @@
+all:test.cpp
+	g++ -lm test.cpp -o test.out /usr/local/lib/liblua.a -ldl

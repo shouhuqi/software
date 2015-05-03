@@ -1,0 +1,10 @@
+#include <lua.h>
+#include <lualib.h>
+#include  <lauxlib.h>
+
+int main(int argc, char* argv[]) {
+    lua = lua_open();
+    luaL_openlib(lua);
+    luaL_dofile(lua, "hello_lua.lua");
+    return 0;
+}

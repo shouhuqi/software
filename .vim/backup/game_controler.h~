@@ -1,0 +1,46 @@
+/**
+ * @file game_controler.h
+ * @author jiangduanbao(com@baidu.com)
+ * @date 2014/08/26 20:14:59
+ * @brief Game Controler
+ *
+ **/
+#ifndef WORKSPACE_PUYO_GAME_GAME_CONTROLER_H
+#define WORKSPACE_PUYO_GAME_GAME_CONTROLER_H
+#pragma once
+
+namespace game {
+class GameControler {
+public:
+    /**
+     * @brief Constructor
+     * */
+    explicit GameControler(const uint32_t board_long,
+                           const uint32_t board_width);
+
+    /**
+     * @brief Destructor
+     * */
+    ~GameControler();
+
+    /**
+     * @brief Init
+     * @param board_long is board'long
+     * @param board_width is board'width
+     * @param refresh_time_in_s is refresh time(s)
+     * @return true if init success,
+     *         false if init false
+     * */
+    bool Init(const uint32_t board_long,
+              const uint32_t board_width
+              const uint32_t refresh_time_in_s);
+
+    bool Start();
+
+    bool Stop();
+
+    bool Pause();
+};
+
+}// end namespace game
+#endif // WORKSPACE_PUYO_GAME_GAME_CONTROLER_H

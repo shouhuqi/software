@@ -1,0 +1,14 @@
+startup_message off
+defscrollback 10000
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+#hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+
+escape z
+autodetach on
+
+term linux
+
+vbell off
+
+defencoding gbk
+encoding gbk gbk
